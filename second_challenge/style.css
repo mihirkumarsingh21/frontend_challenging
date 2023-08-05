@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Body section */
+body{
+    margin: 6rem;
+    display: flex;
+    /* text-align: left; */
+    justify-content: center;
+    background-color: #d3bca048;
+    background-color:cornsilk;
+
+}
+
+/* Introduction to project */
+.border{
+    background-color: #ffffff;
+    width: 300px;
+    height: 450px;
+    text-align: left;
+    padding:50px;
+    border-radius: 5px;
+}
+
+.border h1{
+    line-height: 25px;
+    margin-top: 17px;
+}
+
+.border p{
+    margin-top: 18px;
+    line-height: 22px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.tablet_device{
+    display: none;
+}
+
+/* Price details */
+
+.price{
+    color: #015001;
+}
+
+.price_details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:20px;
+    margin-top: 25px;
+}
+
+button{
+    color: #ffffff;
+    background-color: #015001;
+    padding: 12px 50px;
+    text-align: center;
+    border-radius: 7px;
+    /* font-size: 16px; */
+    font-weight: 600;
+    border: none;
+    margin-top: 28px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:#021014;
+}
+
+/* Media Query */
+
+@media screen and (max-width:768px) {
+
+    /* Universal selector */
+    *{
+        margin: 0px;
+        padding: 0px;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    body{
+        width: 100vw;
+        height: 100vh;
+        margin: 30px;
+    }
+
+    .container{
+        display: grid;
+        grid-template-columns: 1fr;
+        position: relative;
+        right: 50px;
+    }
+
+    .container .product_img{
+        width: 433px;
+        height: 315px;
+        border-radius: 8px;
+    }
+
+    .container .border{
+        width: 429px;
+        height: 415px;
+        border-radius: 9px;
+        position: relative;
+        bottom: 8px;
+    }
+
+    .border h1{
+        font-size: 40px;
+        line-height: 40px;
+        display: none;
+    }
+
+    .border p{
+        font-size: 22px;
+        line-height: 24px;
+        /* padding: 4px; */
+    }
+
+    .border .tablet_device{
+
+        display:block ;
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .price_details .price {
+        position: relative;
+        /* bottom: 10x; */
+        /* right: 40px; */
+    }
+
+    button{
+        padding: 16px 90px;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .price_details .price, span{
+        font-size: 1.4em;
+        position: relative;
+        right: 75px;
+        /* font-weight: 900; */
+       
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #f09f0a;
+    }
+    
+}
