@@ -1,0 +1,252 @@
+/* Universal selector */
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    box-sizing: border-box;
+    font-family:sans-serif;
+} 
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+/* Left side content */
+.container .left_container .pra {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.container .left_container h2{
+    background-image: conic-gradient(circle purple, blue);
+    border-radius: 50%;
+
+}
+
+
+.left_container .getting_score{
+    margin-top: 50px;
+}
+.left_container{
+    box-shadow: 0 20px;
+    border-radius: 13px;
+    width: 300px;
+    height: 400px;
+    background-image:linear-gradient(#0b0553be,#0202ff);
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    left: 3px;
+}
+
+.feedback1{
+    margin-top: 60px;
+}
+
+.feedback2{
+    margin-top: 15px;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.left_container .feedback_for_tablet_screen{
+    display: none;
+}
+
+/* Right side content */
+
+.right_container{
+    border-radius: 7px;
+   background-color: #ffffff;
+   box-shadow: 0 5px 8px;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    bottom: 4px;
+}
+
+.right_container .summary{
+    position: relative;
+    right: 80px;
+    font-size: 18px;
+
+}
+
+.right_container span{
+    position: relative;
+    left: 15px;
+}
+
+.right_container,.reaction, .memory, .yellow, .verbal, .visual{
+    line-height: 45px;
+    text-align: center;
+}
+
+.reaction{
+    background-color:#ffc4ce59;
+    color:#ff0000;
+    padding:7px 25px;
+    border-radius: 6px;
+    /* width: 900px; */
+    text-align: center;
+    position: relative;
+    right: 22px;
+}
+
+.memory{
+    background-color: #ffff7e7c;
+    color: #ffff00;
+    padding:7px 32px;
+    border-radius: 6px;
+    position: relative;
+    right: 10px;
+}
+
+.verbal{
+    background-color: #bffcbf;
+    color: #00ffff;
+    padding:7px 32px;
+    border-radius: 6px;
+    position: relative;
+    right: 10px;
+}
+
+.visual{
+    background-color: #8b81b8af;
+    padding:7px 32px;
+    border-radius: 6px;
+    color: #0202ff;
+    position: relative;
+    left: 14px;
+}
+
+button{
+    border: none;
+    border-radius: 16px;
+    background-color: #000000d3;
+    color: #ffffff;
+    padding: 10px 77px;
+    font-size: 17.5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: #2516c9e7;
+    
+}
+
+/******************************************************/
+/****************** Media Query **********************/
+/******************************************************/
+
+@media screen and (max-width:768px) {
+
+    /******************************************************/
+    /********************* Left side content *******************/
+    /******************************************************/
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 95px;
+        font-size: 17px;
+    }   
+
+    .container .left_container .pra{
+        position: relative;
+        top: 10px;
+    }
+   
+    .container .left_container{
+        height: 313px;
+        position: relative;
+        bottom: 5px;
+        border-radius: 40px;
+    } 
+
+    .container .left_container .getting_score{
+        position: relative;
+        bottom: 15px;
+    }
+
+    .container .right_container{
+        box-shadow: none;
+    }  
+    
+    .container .left_container .feedback1{
+        position: relative;
+        bottom: 28px;
+    }
+   
+    .feedback2{
+        display: none;
+    }
+
+    
+.left_container .feedback_for_tablet_screen{
+    display: block;
+}
+
+/***********************************************************/
+/************************* Right side content ******************/
+/***********************************************************/
+
+.right_container{
+    position: relative;
+    bottom: 22px;
+}
+
+.right_container .reaction{
+    padding: 7px 22px;
+}
+
+
+.right_container .memory{
+    padding: 7px 22px;
+}
+
+.right_container .verbal{
+    padding: 7px 22px;
+}
+
+.right_container .visual{
+    padding: 7px 22px;
+}
+
+button{
+    text-align: center;
+    position: relative;
+    bottom: 20px;
+    font-size: 18px;
+    background-color: #000000d3;;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
