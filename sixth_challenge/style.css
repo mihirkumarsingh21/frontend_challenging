@@ -1,0 +1,237 @@
+/* Universal selector */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow:auto;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+/* Body */
+
+
+/* Header section  And left side content*/
+
+
+.header_container{
+    display: flex;
+    background-color: #000000;
+    padding: 30px;
+    height: 114px;
+
+
+}
+
+.header_container .left_side_content{
+    display: flex;
+    gap: 4px ;
+    color: #ffffff;
+    position: relative;
+    left: 98px;
+    font-size: 18px;
+}
+
+
+.header_container .left_side_content:hover{
+    cursor: pointer;
+    color: #808080;
+    text-shadow: 0 5px 5px;
+    transition: 1s;
+}
+
+.header_container .left_side_content .logo:hover{
+    cursor: pointer;
+    color: #808080;
+    box-shadow: 0 5px 5px;
+    transition: 1s;
+}
+
+.header_container .left_side_content .verticle_line{
+    float: left;
+    border-right:  1px solid #ffffff;
+    height: 20px;
+    padding: 0px 1px;
+    margin-top: 18px;
+}
+
+.header_container .left_side_content .logo,  b, p{
+    padding-top: 17px;
+
+}
+
+/* Right side content button */
+
+.header_container .right_side_content{
+    position: relative;
+    left: 750px;
+}
+
+.header_container .right_side_content .btn_container .req_btn{
+    text-align: center;
+    font-size: 18px;
+    padding: 13px 35px;
+    background-color: #000000;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+}
+
+.header_container .right_side_content .btn_container .req_btn:hover{
+    cursor: pointer;
+}
+
+.header_container .right_side_content .btn_container .sign_in_btn{
+    background-color: #4C5FD5;
+    color: #ffffff;
+    text-align: center;
+    padding: 13px 30px;
+    border-radius: 12px;
+    font-size: 20px;
+}
+
+
+.header_container .right_side_content .btn_container .sign_in_btn:hover{
+    color:#000000;
+    background-color: #ffffff;
+    cursor: pointer;
+    transition: 1s;
+}
+
+/* Help section */
+
+.items_container{
+    text-align: center;
+    background-color: #dadbf1;
+    height: 600px;
+}
+
+.items_container .help_container{
+    margin-top: 150px;
+    font-size: 35px;
+    text-align: center;
+}
+
+
+.items_container .help_container input{
+    margin-top: 25px;
+    padding: 20px;
+    padding-right: 25em;
+    border-radius: 6px;
+    box-shadow: 0 3px 2px ;
+    
+}
+
+
+.items_container .help_container input[ type="text"] {
+    font-size: 20px;
+}
+
+
+.items_container .help_container input:hover{
+    border-color: #4C5FD5;
+    
+}
+
+
+/*  Hero section */
+/* Hero left section */
+
+.content_container  {
+    margin: 65px;
+    padding: 50px;
+    margin-top: 500px;
+    margin-left: 112px;
+
+}
+
+.content_container  img {
+    margin-top: 50px;
+}
+
+.content_container h2, p, a{
+    line-height: 30px;
+}
+
+.content_container a {
+    text-decoration: none;
+}
+
+.content_container a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+/* 
+
+.content_container .hero_right_side_content{
+    position: relative;
+    left: 750px;
+    bottom: 560px;
+}  
+ */
+
+ .hero_right_side_content {
+    margin-top: 70px;
+ }
+
+ .content_container .hero_right_side_content {
+    
+    position: relative;
+    bottom: 900px;
+    float:right;
+ }
+
+ 
+ 
+ /* .content_container .hero_right_side_content .fourth_content img, h2, p, a{
+    display: grid;
+    grid-template-columns: 1fr ;
+ } */
+
+
+
+ /* Footer section */
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.footer_container a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.footer_container a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.nav_container {
+    display: flex;
+    position: relative;
+    gap: 70px;
+    margin-top: 35px;
+    margin-left: 100px;
+
+}
+
+.contact_container {
+    margin-left: 624px;
+}
+
+.copy_right_content {
+    float: right;
+    margin-right: 50px;
+    position: relative;
+    bottom: 50px;
+} 
+
+.copy_right_content img, p {
+    line-height: 17px;
+}
+
+.copy_right_content img {
+    border-radius: 18px;
+}
